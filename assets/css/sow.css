@@ -1,7 +1,7 @@
 :root {
 	--fuente-titulo: "BBH Sans Bogle";
 	--fuente-texto: "Roboto Condensed";
-	--size-titulo1: 4.5em;
+	--size-titulo1: 3.6em;
 	--size-titulo2: 3em;
   --size-titulo3: 1.5em;
 }
@@ -41,8 +41,8 @@ header {
 	height: auto;
 	color:#e9bfe2;
   padding: 2.5em;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 4em;
+  padding-right: 4.8em;
 
 }
 
@@ -144,7 +144,10 @@ border: 0.5em solid black;
 }
 
 .conclusion {
-  padding-top: 1.5em;
+  margin-top: 1.5em;
+  padding: 1em;
+  background-color:#2d2d2d34;
+  border-radius: 5px;
 }
 
 .conclusion strong {
@@ -208,13 +211,13 @@ footer {
 
     /* header  */
   .cover {
-    padding: 1.3em;
+    padding: 1em;
     padding-left: 2em;
     padding-right: 2em;
   }
 
-  .tittle {
-    font-size: 3em;
+  .title {
+    font-size: 2.5em;
   }
 
   h2 {
@@ -292,18 +295,18 @@ footer {
     padding: 1em;
   }
 
-  .tittle {
-    font-size: 2em;
-    
+  .title {
+    font-size: 1.2em;
+
   }
 
   h2 {
-    font-size: 2.3em;
+    font-size: 2.2em;
   }
 
   /* menu  */
   nav ul li a {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   /* main  */
