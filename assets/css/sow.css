@@ -176,7 +176,7 @@ border: 0.5em solid black;
   background-color: #ffd8d8;
 }
 
-#site-smooothie {
+#site-smooothy {
   background-color: #ffddff;
   padding-bottom: 4em;
 }
@@ -294,6 +294,7 @@ footer {
 
   .tittle {
     font-size: 2em;
+    
   }
 
   h2 {
@@ -308,8 +309,8 @@ footer {
   /* main  */
   main section {
   padding: 1.5em;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 1.8em;
+  padding-left: 1.8em;
   }
 
 }
