@@ -1,0 +1,315 @@
+:root {
+	--fuente-titulo: "BBH Sans Bogle";
+	--fuente-texto: "Roboto Condensed";
+	--size-titulo1: 4.5em;
+	--size-titulo2: 3em;
+  --size-titulo3: 1.5em;
+}
+
+* {
+	font-family: var(--fuente-texto);
+  box-sizing: border-box;
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1, h2 {
+	font-family: var(--fuente-titulo);
+}
+
+h2 {
+  font-size: var(--size-titulo2);
+}
+
+h3 {
+  font-size: var(--size-titulo3);
+}
+
+header {
+  background: #181818;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* TITULO  */
+.cover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	color:#e9bfe2;
+  padding: 2.5em;
+  padding-left: 5em;
+  padding-right: 5em;
+
+}
+
+.title {
+	font-size: var(--size-titulo1);
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 0.15em solid currentColor;
+	animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+@keyframes blink-caret {
+	50% {
+		border-color: transparent;
+	}
+}
+
+
+/*--------- MENÚ ----------*/
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #000000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ebace0;
+  font-family: var(--fuente-titulo);
+  font-size: 1.5em;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff55e3;
+  text-decoration: underline;
+}
+
+/* .burger {
+    display: none;
+    width: 1.75em;
+
+} */
+
+
+
+/* ------------- ANALISIS -------*/
+
+main section {
+  padding: 3em;
+  padding-right: 4.5em;
+  padding-left: 5em;
+}
+
+main section iframe {
+width: 70%;
+border: 0.5em solid black;
+}
+
+.analysis-text {
+  columns: 1;
+  column-gap: 2rem;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.analysis-text ul li {
+  margin-bottom: 1em;
+}
+
+.analysis-text ul li h3 {
+  margin-bottom: 0.3em;
+}
+
+.analysis-text ul li p {
+  text-align: justify;
+}
+
+.conclusion {
+  padding-top: 1.5em;
+}
+
+.conclusion strong {
+  font-size: var(--size-titulo3);
+}
+
+.screenshots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.screenshots img {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+
+
+#site-wildwesters {
+  background-color: #fcecdf;
+}
+
+#site-weisdevice {
+  background-color: #dffbe9;
+}
+
+#site-chrome {
+  background-color: #ffd8d8;
+}
+
+#site-smooothie {
+  background-color: #ffddff;
+  padding-bottom: 4em;
+}
+
+
+
+/* FOOTER  */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #ebace0;
+  font-family: var(--fuente-texto);
+  background-color: #333;
+}
+
+
+/* MEDIA QUERIS */
+@media (min-width: 800px) {
+  .analysis-text { columns: 2; }
+
+}
+
+/* TABLET------------- */
+@media (max-width: 800px) {
+  * {
+    font-size: 13px;
+  }
+
+    /* header  */
+  .cover {
+    padding: 1.3em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .tittle {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  /* menu  */
+  nav ul li a {
+    font-size: 1.3em;
+  }
+
+  /* main  */
+  main section {
+  padding: 2em;
+  padding-right: 3em;
+  padding-left: 3em;
+  }
+
+  main section iframe {
+    width: 80%;
+    height: 20em;
+  }
+
+
+
+
+  /* nav {
+    display: block;
+    position: fixed;
+    background-color: var(--color-grisOscuro);
+  }
+
+  .menu {
+    margin: 0;
+    padding: 5%;
+    background: #000000;
+    position: fixed;
+    right: -100%;
+    width: 50%;
+    text-align: center;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    transition: all 0.33s;
+  }  
+
+  .menu-show {
+    right: 0;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .burger i {
+    font-size: 2.2em;
+  } */
+
+}
+
+
+
+/* MOVIL ----------------- */
+@media only screen and (max-width: 540px) {
+  * {
+  font-size: 11.5px;
+  }
+
+  /* header  */
+  .cover {
+    padding: 1em;
+  }
+
+  .tittle {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  /* menu  */
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  /* main  */
+  main section {
+  padding: 1.5em;
+  padding-right: 2em;
+  padding-left: 2em;
+  }
+
+}
